@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    $("h1").click(function() {
-        alert("working")
-    })
+
         var movie = $('#filmTitle').val();
         console.log(movie)
         $.get('http://www.omdbapi.com/?t=' + movie, function(data) {
