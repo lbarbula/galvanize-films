@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type= "text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <title>Galvanize Films</title>
-  </head>
-  <body>
-    <a href="films.html"><h1>Galvanize Films</h1></a>
-  </body>
+</head>
+
+<body>
+    <header>
+        <h1>Galvanize Films</h1>
+    </header>
+    <main>
+        <form action="" method="get">
+            <label for="filmTitle">Film</label>
+            <input id="filmTitle" type="text" placeholder="Movie">
+            <a href="films.html"><button id="movieSend" type="button" value="search">Search</button>
+            </a>
+            <br>
+            <br>
+            <label for="actor">Actor</label>
+            <input id="actorSearch" type="text" placeholder="Actor">
+            <a href="actors.html">
+                <button id="actorSend" type="button" value="search">Search</button>
+            </a>
+        </form>
+    </main>
+    <footer>
+        <h3>Footer content</h3>
+    </footer>
+</body>
+
 </html>

@@ -1,8 +1,16 @@
-$(document).ready(function(){
-  $("h1").click(function(){
-    alert("working")
-  })
-  $.get('https://api.themoviedb.org/3/movie/550/images?api_key=da165806dfc2a36b2b7e5f3599c39b5c', function(data){
-    
-  })
+$(document).ready(function() {
+    $("h1").click(function() {
+        alert("working")
+    })
+        var movie = $('#filmTitle').val();
+        console.log(movie)
+        $.get('http://www.omdbapi.com/?t=' + movie, function(data) {
+            var actors = data.Actors;
+            var awards = data.Awards;
+            var poster = data.Poster;
+             $('#actors').append(actors)
+             $('#awards').append(awards)
+             $('#poster').attr('src', poster)
+            console.log(data)
+    })
 })
