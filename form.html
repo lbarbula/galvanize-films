@@ -16,13 +16,15 @@
     <main id="submission">
         <form id="comments" action="" method="post">
             <label>Title</label>
-            <input type="text" placeholder="Username">
+            <input id="title" type="text" placeholder="Title">
             <label>Genre</label>
-            <input type="password" placeholder="password">
+            <input id="genre" type="text" placeholder="Genre">
             <label>Description</label>
-            <textarea rows="5">Write Comment</textarea>
+            <textarea id="description" rows="5">Write Comment</textarea>
+            <label>Image</label>
+            <input id="image" type="url" placeholder="Enter Image Url">
             <label>Rating</label>
-            <select>
+            <select id="rating">
                 <option>G</opton>
                     <option>PG</opton>
                         <option>PG-13</opton>
@@ -32,6 +34,7 @@
             </select>
             <input type="submit" value="Comment">
         </form>
+        <p class="save-status"></p>
     </main>
     <footer>
         <h3>Footer Content</h3>
