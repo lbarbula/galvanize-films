@@ -25,7 +25,7 @@ $(document).ready(function() {
             rating: $('#rating').val()
         }
         console.log(post)
-        $.post("http://mighty-eyrie-15280.herokuapp.com/films", post).done(function(message) {
+        $.post("https://galvanize-cors-proxy.herokuapp.com/http://mighty-eyrie-15280.herokuapp.com/films", post).done(function(message) {
             $('.save-status').text(message.message);
             $('.save-status').fadeIn(500).delay(2000).fadeOut(500);
         })
