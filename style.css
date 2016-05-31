@@ -31,6 +31,10 @@ main {
   background-image: none;
   background-color: hsl(5, 81%, 56%);
 }
+#submission {
+  background-image: none;
+  background-color: hsl(5, 81%, 56%);
+}
 form {
   display: flex;
   justify-content: center;
