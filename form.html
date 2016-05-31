@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <title></title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <h1>Submit Comments</h1>
+        <h1>Submit Comments</h1>
     </header>
     <main id="submission">
+        <form id="comments" action="" method="post">
+            <label>Username</label>
+            <input type="text" placeholder="Username">
+            <label>Password</label>
+            <input type="password" placeholder="password">
+            <label>Film</label>
+            <input type="text" placeholder="film">
+            <label>Description</label>
+            <textarea rows="5">Write Description</textarea>
+            <label>Rating</label>
+            <select>
+                <option>G</opton>
+                    <option>PG</opton>
+                        <option>PG-13</opton>
+                            <option>R</opton>
+                                <option>NC-17</opton>
+                                    <option>NR</opton>
+            </select>
+            <input type="submit" value="Comment">
+        </form>
     </main>
     <footer>
-      <h3>Footer Content</h3>
+        <h3>Footer Content</h3>
     </footer>
-  </body>
+</body>
+
 </html>

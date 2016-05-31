@@ -13,4 +13,7 @@ $(document).ready(function() {
              $('#poster').attr('src', poster)
             console.log(data)
     })
+    $('#comments').submit(function(){
+      event.preventDefault();
+    })
 })

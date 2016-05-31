@@ -24,20 +24,29 @@ main {
     width: 100%;
 }
 #filmPage {
-  background-image: none;
-  background-color: hsl(5, 81%, 56%);
+    background-image: none;
+    background-color: hsl(5, 81%, 56%);
 }
 #actorsPage {
-  background-image: none;
-  background-color: hsl(5, 81%, 56%);
+    background-image: none;
+    background-color: hsl(5, 81%, 56%);
 }
 #submission {
-  background-image: none;
-  background-color: hsl(5, 81%, 56%);
+    background-image: none;
+    background-color: hsl(5, 81%, 56%);
 }
 form {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+#comments {
+    flex-direction: column;
+}
+#comments > input, textarea {
+    margin: 1rem;
+}
+textarea {
+    resize: none;
 }
 button {
     height: 2rem;
@@ -47,13 +56,10 @@ button {
     border-bottom-right-radius: 5px;
 }
 input {
+    margin-left: 5rem;
     height: 1.6rem;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-}
-label {
-    margin-left: 5rem;
-    color: white;
 }
 footer {
     display: flex;
